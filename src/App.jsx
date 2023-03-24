@@ -1,9 +1,13 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout/Layout';
 import Dashboard from './pages/Dashboard/Dashboard';
+// import Auth from "./Login"
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import Login from './Login';
+// import { Auth, useAuth } from "@arcana/auth-react";
+
 
 
 const App = () => {
@@ -17,7 +21,7 @@ const App = () => {
   }, []);
   return <div id="dashboard">
     <BrowserRouter>
-      <Particles
+      {/* <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -93,15 +97,19 @@ const App = () => {
           },
           detectRetina: true,
         }}
-      />
+      /> */}
 
       <Routes>
 
         <Route path="/" element={<Layout />}>
+          <Route index element={<Login />} />
 
           <Route path="dashboard" element={<Dashboard />} />
 
+
         </Route>
+        <Route path="/auth" element={<Login />} />
+
 
       </Routes>
     </BrowserRouter>

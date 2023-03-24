@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@arcana/auth": "^1.0.3",
+    "@arcana/auth-react": "^0.0.3",
     "@asseinfo/react-kanban": "^2.2.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
