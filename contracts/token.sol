@@ -1,4 +1,4 @@
-<!--This code is used for the creation and minting of ERC20 tokens called FoodPunk FPK -->
+<!--This code is used for the creation and minting of ERC20 tokens called FoodPunk FPK, the interface IERC is given in the FoodDistribution sol file -->
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
